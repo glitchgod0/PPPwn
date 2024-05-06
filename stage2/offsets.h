@@ -196,6 +196,21 @@
 #define kdlsym_addr_copyinstr_patch2 0xffffffff824de4ef
 #define kdlsym_addr_copyinstr_patch3 0xffffffff824de520
 
+// FakeSelf hooks
+#define kdlsym_addr_sceSblAuthMgrIsLoadable2_hook                             0x0063D28E
+#define kdlsym_addr_sceSblAuthMgrIsLoadable__sceSblACMgrGetPathId_hook        0x0063D13C
+#define kdlsym_addr_sceSblAuthMgrSmLoadSelfBlock__sceSblServiceMailbox_hook   0x00641A48
+#define kdlsym_addr_sceSblAuthMgrSmLoadSelfSegment__sceSblServiceMailbox_hook 0x00640E0D
+#define kdlsym_addr_sceSblAuthMgrVerifyHeader_hookA                           0x0063DA26
+#define kdlsym_addr_sceSblAuthMgrVerifyHeader_hookB                           0x0063E709
+
+// FakePkg hooks
+#define kdlsym_addr_mountpfs__sceSblPfsSetKeys_hookA                          0x006993B9
+#define kdlsym_addr_mountpfs__sceSblPfsSetKeys_hookB                          0x006995EA
+#define kdlsym_addr_npdrm_decrypt_isolated_rif__sceSblKeymgrSmCallfunc_hook   0x0064D230
+#define kdlsym_addr_npdrm_decrypt_rif_new__sceSblKeymgrSmCallfunc_hook        0x0064DFFE
+#define kdlsym_addr_sceSblKeymgrInvalidateKey__sx_xlock_hook                  0x00626FAD
+#define kdlsym_addr_sceSblKeymgrSetKeyStorage__sceSblDriverSendMsg_hook       0x0062EE65
 
 #else
 
